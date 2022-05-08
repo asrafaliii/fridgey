@@ -18,7 +18,7 @@ function App() {
         <Route path="/products" element={<Products />}/>
         <Route path="/blog" element={<Blog />}/>
         <Route path="/login" element={<Login />}/>
-        <Route pthh="*" element={<NotFound />}/>
+        <Route path="*" element={<NotFound />}/>
       </Routes>
       <Footer />
     </div>
