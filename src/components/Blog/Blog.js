@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <section className='container'>
+        <section className='container mt-5'>
             <div>
                 <h3>Difference between javascript and nodejs</h3>
                 <p>JavaScript is a lightweight, object-oriented scripting language that is used to build dynamic HTML pages with interactive effects on a webpage. On the other hand, Node.js usually represents a list of objects and methods accessible to JavaScript code when run in the V8 engine or via the node interpreter.

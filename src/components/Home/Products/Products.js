@@ -1,10 +1,9 @@
 import React from 'react';
 
 const Products = ({product}) => {
-    console.log(product)
     const{name, image, description, price, quantity, supplier} = product;
     return (
-       <section>
+       <section id="products">
            <div class="card mb-3">
   <div class="row g-0">
     <div class="col-md-4">
