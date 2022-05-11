@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Products = ({product}) => {
     const{name, image, description, price, quantity, supplier} = product;
+
+    const navigate = useNavigate();
+
+    const navigateInventory = event =>{
+        navigate('/inventory')
+    }
     return (
        <section id="products">
            <div class="card mb-3">
@@ -16,7 +23,7 @@ const Products = ({product}) => {
         <h5 class="card-text"><small class="text-muted">Price: {price}</small></h5>
         <p class="card-text"><small class="text-muted"> Quantity: {quantity}</small></p>
         <p class="card-text"><small class="text-muted">Supplier: {supplier}</small></p>
-        <button type="button" class="btn btn-success">Manage</button>
+        <button onClick={navigateInventory} type="button" class="btn btn-success">Manage</button>
       </div>
     </div>
   </div>
