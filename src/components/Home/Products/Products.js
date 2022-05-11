@@ -10,13 +10,14 @@ const Products = ({product}) => {
     <div class="col-md-4">
       <img src={image} class="img-fluid rounded-start" alt="..." />
     </div>
-    <div class="col-md-8">
+    <div class="col-lg-6">
       <div class="card-body">
         <h5 class="card-title">{name}</h5>
         <p class="card-text">{description}</p>
-        <p class="card-text"><small class="text-muted">{price}</small></p>
-        <p class="card-text"><small class="text-muted">{quantity}</small></p>
-        <p class="card-text"><small class="text-muted">{supplier}</small></p>
+        <h5 class="card-text"><small class="text-muted">Price: {price}</small></h5>
+        <p class="card-text"><small class="text-muted"> Quantity: {quantity}</small></p>
+        <p class="card-text"><small class="text-muted">Supplier: {supplier}</small></p>
+        <button type="button" class="btn btn-success">Manage</button>
       </div>
     </div>
   </div>
