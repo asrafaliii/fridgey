@@ -37,7 +37,7 @@ const SignUp = () => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
         console.log('update done');
-        navigate('/appointment');
+        navigate('/inventory');
     }
     return (
         <div className='flex h-screen justify-center items-center mt-5'>
@@ -118,7 +118,7 @@ const SignUp = () => {
                         {signInError}
                         <input className='btn btn-dark w-full max-w-xs text-light' type="submit" value="Sign Up" />
                     </form>
-                    <p><small>Already have an account? <Link className='text-primary' to="/login">Please login</Link></small></p>
+                    <p><small>Already have an account? <Link className='text-success' to="/login">Please login</Link></small></p>
                     <div className="divider">OR</div>
                     <button onClick={() => signInWithGoogle()} type="button" class="btn btn-outline-dark">Continue with Google</button>
                 </div>
