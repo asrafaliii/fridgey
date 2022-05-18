@@ -7,7 +7,7 @@ const Products = ({product}) => {
     const navigate = useNavigate();
 
     const navigateInventory = event =>{
-        navigate('/inventory')
+        navigate('/update')
     }
     return (
        <section id="products">
@@ -23,7 +23,7 @@ const Products = ({product}) => {
         <h5 class="card-text"><small class="text-muted">Price: {price}</small></h5>
         <p class="card-text"><small class="text-muted"> Quantity: {quantity}</small></p>
         <p class="card-text"><small class="text-muted">Supplier: {supplier}</small></p>
-        <button onClick={navigateInventory} type="button" class="btn btn-success">Manage</button>
+        <button onClick={navigateInventory} type="button" class="btn btn-success">Update</button>
       </div>
     </div>
   </div>

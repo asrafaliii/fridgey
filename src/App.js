@@ -10,6 +10,7 @@ import SignUp from './components/Login/SignUp';
 import Header from './components/Shared/Header';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Update from './components/Home/Products/Update';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/products" element={<Products />}/>
+        <Route path="/update" element={<Update />}/>
         <Route path="/inventory" element={<Inventory />}/>
         <Route path="/blog" element={<Blog />}/>
         <Route path="/about" element={<About />}/>
