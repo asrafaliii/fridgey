@@ -23,11 +23,11 @@ const Inventory = () => {
           <div>
                 <div className='d-flex justify-content-between mt-3'>
                 <h1>Inventory</h1>
-                <button onClick={navigateManageInventory} type="button" class="btn btn-success">Manage Inventory</button>
+                <button onClick={navigateManageInventory} type="button" className="btn btn-success">Manage Inventory</button>
                 </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Please Enter your Qnt" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+                <div className="input-group mb-3">
+                    <input type="text" className="form-control" placeholder="Please Enter your Qnt" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                    <button className="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
                 </div>
 
                 

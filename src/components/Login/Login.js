@@ -102,7 +102,7 @@ const Login = () => {
                     </form>
                     <p><small>New to Fridgey <Link className='text-success' to="/signup">Create New Account</Link></small></p>
                     <div className="divider">OR</div>
-                    <button onClick={() => signInWithGoogle()} type="button" class="btn btn-outline-dark">Continue with Google</button>
+                    <button onClick={() => signInWithGoogle()} type="button" className="btn btn-outline-dark">Continue with Google</button>
                 </div>
             </div>
         </div >

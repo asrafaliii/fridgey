@@ -11,19 +11,19 @@ const Products = ({product}) => {
     }
     return (
        <section id="products">
-           <div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src={image} class="img-fluid rounded-start" alt="..." />
+           <div className="card mb-3">
+  <div className="row g-0">
+    <div className="col-md-4">
+      <img src={image} className="img-fluid rounded-start" alt="..." />
     </div>
-    <div class="col-lg-6">
-      <div class="card-body">
-        <h5 class="card-title">{name}</h5>
-        <p class="card-text">{description}</p>
-        <h5 class="card-text"><small class="text-muted">Price: {price}</small></h5>
-        <p class="card-text"><small class="text-muted"> Quantity: {quantity}</small></p>
-        <p class="card-text"><small class="text-muted">Supplier: {supplier}</small></p>
-        <button onClick={navigateInventory} type="button" class="btn btn-success">Update</button>
+    <div className="col-lg-6">
+      <div className="card-body">
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text">{description}</p>
+        <h5 className="card-text"><small className="text-muted">Price: {price}</small></h5>
+        <p className="card-text"><small className="text-muted"> Quantity: {quantity}</small></p>
+        <p className="card-text"><small className="text-muted">Supplier: {supplier}</small></p>
+        <button onClick={navigateInventory} type="button" className="btn btn-success">Update</button>
       </div>
     </div>
   </div>

@@ -8,7 +8,7 @@ const ManageInventoryItem = ({item}) => {
         <td>{price}</td>
         <td>{quantity}</td>
         <td>{supplier}</td>
-        <td><button type="button" class="btn btn-danger">Delete</button></td>
+        <td><button type="button" className="btn btn-danger">Delete</button></td>
     </tr>
     );
 };

@@ -123,7 +123,7 @@ const SignUp = () => {
                     </form>
                     <p><small>Already have an account? <Link className='text-success' to="/login">Please login</Link></small></p>
                     <div className="divider">OR</div>
-                    <button onClick={() => signInWithGoogle()} type="button" class="btn btn-outline-dark">Continue with Google</button>
+                    <button onClick={() => signInWithGoogle()} type="button" className="btn btn-outline-dark">Continue with Google</button>
                 </div>
             </div>
         </div >

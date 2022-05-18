@@ -20,9 +20,9 @@ const ManageInventory = () => {
         <div className='container'>
            <div className='d-flex justify-content-between mt-3'>
                 <h1>Manage Inventory</h1>
-                <button onClick={navigateManageInventory} type="button" class="btn btn-success">Add New Item</button>
+                <button onClick={navigateManageInventory} type="button" className="btn btn-success">Add New Item</button>
            </div>
-            <table class="table table-striped">
+            <table className="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
