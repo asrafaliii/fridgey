@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ManageInventory = () => {
   const [products, setPorducts] = useState([]);
   useEffect(() => {
-    fetch("https://aqueous-depths-14829.herokuapp.com/products")
+    fetch("https://still-scrubland-53446.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setPorducts(data));
   }, []);
@@ -18,7 +18,7 @@ const ManageInventory = () => {
     console.log(id);
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `http://localhost:5000/products/${id}`;
+      const url = `https://still-scrubland-53446.herokuapp.com/products/${id}`;
       fetch(url, {
         method: "DELETE",
       })

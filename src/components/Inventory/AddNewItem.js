@@ -10,7 +10,7 @@ const AddNewItem = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = `http://localhost:5000/products`;
+    const url = `https://still-scrubland-53446.herokuapp.com/products`;
     fetch(url, {
       method: "POST",
       headers: {
